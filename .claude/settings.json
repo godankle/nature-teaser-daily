@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(mkdir -p /Users/nibo/Desktop/ea_demo/.claude/rules /Users/nibo/Desktop/ea_demo/.claude/skills /Users/nibo/Desktop/ea_demo/context /Users/nibo/Desktop/ea_demo/references/sops /Users/nibo/Desktop/ea_demo/references/examples /Users/nibo/Desktop/ea_demo/projects /Users/nibo/Desktop/ea_demo/archives)",
+      "Bash(touch /Users/nibo/Desktop/ea_demo/.claude/rules/.gitkeep /Users/nibo/Desktop/ea_demo/.claude/skills/.gitkeep /Users/nibo/Desktop/ea_demo/context/me.md /Users/nibo/Desktop/ea_demo/context/work.md /Users/nibo/Desktop/ea_demo/context/team.md /Users/nibo/Desktop/ea_demo/context/current-priorities.md /Users/nibo/Desktop/ea_demo/context/goals.md /Users/nibo/Desktop/ea_demo/references/sops/.gitkeep /Users/nibo/Desktop/ea_demo/references/examples/.gitkeep /Users/nibo/Desktop/ea_demo/projects/.gitkeep /Users/nibo/Desktop/ea_demo/archives/.gitkeep)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "/Users/nibo/Desktop/ea_demo/.claude/rules"
+    ]
+  }
+}
