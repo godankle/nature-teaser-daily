@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Engineered blood clots stop bleeding in seconds",
+    "url": "https://www.nature.com/articles/d41586-026-01150-2",
+    "date": "2026-04-29",
+    "type": "News & Views",
+    "summary": "Red blood cells have been modified to form strong clots that halt any bleeding almost instantly and then promote tissue regeneration.",
+    "authors": [
+      "Malcolm Xing",
+      "Gaoxing Luo"
+    ],
+    "teaser": "Red blood cells have been modified to form strong clots that halt any bleeding almost instantly and then promote tissue regeneration."
+  },
+  {
+    "title": "Competition between separated parental genomes in fertilized eggs aids development",
+    "url": "https://www.nature.com/articles/d41586-026-01270-9",
+    "date": "2026-04-29",
+    "type": "Research Briefing",
+    "summary": "In fertilized egg cells, the maternal and paternal genomes are enclosed in separate compartments called pronuclei. Experiments in mice reveal that this spatial separation enables parental competition for cytoplasmic factors, which helps to prevent the dysregulation of chemical modifications to DNA-packing proteins and contributes to healthy embryonic development.",
+    "authors": [],
+    "teaser": "In fertilized egg cells, the maternal and paternal genomes are enclosed in separate compartments called pronuclei. Experiments in mice reveal that this spatial separation enables parental competition for cytoplasmic factors, which helps to prevent the dysregulation of chemical modifications to DNA-packing proteins and contributes to healthy embryonic development."
+  },
+  {
+    "title": "Higher racial diversity in US business and law schools is linked to higher graduate salaries",
+    "url": "https://www.nature.com/articles/d41586-026-01273-6",
+    "date": "2026-04-29",
+    "type": "Policy Brief",
+    "summary": "Two comprehensive data sets concerning students who graduated from 141 business schools over 29 years and 200 law schools over 21 years show that higher racial diversity is associated with higher median salary at graduation. Policies that promote racial diversity seem likely to enhance education and benefit society overall.",
+    "authors": [
+      "Debanjan Mitra",
+      "Peter N. Golder",
+      "Mariya Topchy"
+    ],
+    "teaser": "Two comprehensive data sets concerning students who graduated from 141 business schools over 29 years and 200 law schools over 21 years show that higher racial diversity is associated with higher median salary at graduation. Policies that promote racial diversity seem likely to enhance education and benefit society overall."
+  },
+  {
+    "title": "Delivering an immune therapy into tumours instead of intravenously reduces adverse effects",
+    "url": "https://www.nature.com/articles/d41586-026-01193-5",
+    "date": "2026-04-29",
+    "type": "Clinical Briefing",
+    "summary": "In people with advanced skin cancer, injecting low doses of an anticancer immunotherapy directly into tumours, rather than administering high doses intravenously, reduced severe immune toxicity while preserving antitumour efficacy. Pre-existing antitumour immunity predicted clinical benefit most strongly, and profiling fresh tissue provided response biomarkers faster than conventional diagnostics did.",
+    "authors": [],
+    "teaser": "In people with advanced skin cancer, injecting low doses of an anticancer immunotherapy directly into tumours, rather than administering high doses intravenously, reduced severe immune toxicity while preserving antitumour efficacy. Pre-existing antitumour immunity predicted clinical benefit most strongly, and profiling fresh tissue provided response biomarkers faster than conventional diagnostics did."
+  },
+  {
+    "title": "Friendlier LLMs tell users what they want to hear — even when it is wrong",
+    "url": "https://www.nature.com/articles/d41586-026-01153-z",
+    "date": "2026-04-29",
+    "type": "News & Views",
+    "summary": "A large language model that is trained to respond in a warm manner is more likely to give incorrect information and reinforce conspiracy beliefs.",
+    "authors": [
+      "Desmond Ong"
+    ],
+    "teaser": "A large language model that is trained to respond in a warm manner is more likely to give incorrect information and reinforce conspiracy beliefs."
+  },
+  {
+    "title": "A cell atlas charts the immune architecture of diabetic kidney disease",
+    "url": "https://www.nature.com/articles/d41586-026-01177-5",
+    "date": "2026-04-29",
+    "type": "Research Briefing",
+    "summary": "Single-cell gene-expression profiling and spatial mapping have revealed the immune microenvironments comprising aggregated immune cells called B cells in a subset of individuals who have accelerated disease progression.",
+    "authors": [],
+    "teaser": "Single-cell gene-expression profiling and spatial mapping have revealed the immune microenvironments comprising aggregated immune cells called B cells in a subset of individuals who have accelerated disease progression."
+  },
+  {
+    "title": "Algorithm that gets ‘under the hood’ of AI models could effectively steer their responses",
+    "url": "https://www.nature.com/articles/d41586-026-01267-4",
+    "date": "2026-04-29",
+    "type": "News & Views",
+    "summary": "A method for identifying representations of concepts in neural networks could provide a more-effective way to control and monitor artificial-intelligence systems.",
+    "authors": [
+      "Aaron Mueller"
+    ],
+    "teaser": "A method for identifying representations of concepts in neural networks could provide a more-effective way to control and monitor artificial-intelligence systems."
+  },
+  {
+    "title": "Machine learning improves health-care access in Sierra Leone",
+    "url": "https://www.nature.com/articles/d41586-026-01152-0",
+    "date": "2026-04-29",
+    "type": "News & Views",
+    "summary": "A machine-learning tool that allocates scarce medicines to meet demand and reduce waste is providing millions with better health care as it rolls out nationwide.",
+    "authors": [
+      "Ziad Obermeyer"
+    ],
+    "teaser": "A machine-learning tool that allocates scarce medicines to meet demand and reduce waste is providing millions with better health care as it rolls out nationwide."
+  },
+  {
+    "title": "The past, present and future of de novo protein design",
+    "url": "https://www.nature.com/articles/s41586-026-10328-7",
+    "date": "2026-04-29",
+    "type": "Review Article",
+    "summary": "A Review of de novo protein design highlights key methodological advances and achievements, current challenges and future applications.",
+    "authors": [
+      "Wei Yang",
+      "Shunzhi Wang",
+      "David Baker"
+    ],
+    "teaser": ""
+  }
+]
