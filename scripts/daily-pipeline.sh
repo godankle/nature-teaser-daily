@@ -11,7 +11,7 @@ if [[ -z "$CLAUDE" ]]; then
   echo "ERROR: Claude Code binary not found. Is the VS Code extension installed?"
   exit 1
 fi
-PROJECT=/Users/nibo/Desktop/ea_demo
+PROJECT=/Users/nibo/nature-teaser-daily
 DATA="$PROJECT/projects/nature-teaser-daily/data"
 
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
