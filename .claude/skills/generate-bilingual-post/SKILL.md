@@ -1,6 +1,8 @@
 # Skill: generate-bilingual-post
 
-Generates a bilingual (EN + ZH) Nature Teaser Daily post from crawled article JSON.
+Generates two versions of the Nature Teaser Daily post from crawled article JSON:
+- **English** (`post.md`) — English prose with inline Chinese vocabulary annotations
+- **Chinese** (`post_zh.md`) — fully Chinese post with English terms in parentheses where useful
 
 ## When to use
 - After `crawl-nature-reviews` has produced a `YYYY-MM-DD/reviews.json`
@@ -9,7 +11,7 @@ Generates a bilingual (EN + ZH) Nature Teaser Daily post from crawled article JS
 ## Usage
 
 ### Preferred: ask Claude Code directly (no API key needed)
-Just say: "Generate the bilingual post for [date]" — Claude Code reads the JSON and writes the post inline. Faster, free, no setup.
+Just say: "Generate the bilingual post for [date]" — Claude Code reads the JSON and writes both posts inline. Faster, free, no setup.
 
 ### Alternative: run as a Python script
 Requires `ANTHROPIC_API_KEY` set in your environment.
@@ -18,10 +20,10 @@ Requires `ANTHROPIC_API_KEY` set in your environment.
 # Install dependencies (first time only)
 pip install -r .claude/skills/generate-bilingual-post/requirements.txt
 
-# Generate post for yesterday (default)
+# Generate posts for yesterday (default)
 python .claude/skills/generate-bilingual-post/generate.py
 
-# Generate post for a specific date
+# Generate posts for a specific date
 python .claude/skills/generate-bilingual-post/generate.py --date 2026-04-29
 ```
 
@@ -33,17 +35,28 @@ Optionally reads the previous day's `YYYY-MM-DD/recap.json` to chain the recap q
 
 ## Output
 
-Two files are created in `projects/nature-teaser-daily/data/YYYY-MM-DD/`:
+Three files are created in `projects/nature-teaser-daily/data/YYYY-MM-DD/`:
 
 ### `post.md`
-The formatted post, ready for copy-paste:
+English post with inline Chinese vocabulary annotations:
 - Recap from yesterday's question (opener)
-- Numbered stories with inline Chinese vocab annotations
+- Numbered stories with inline Chinese vocab: `term (中文)`
 - "Why it matters" societal benefit per story
 - Original article link per story
-- Full vocabulary table
+- Full vocabulary table (English | 中文 | Notes)
 - Recap answer
 - Closing greeting (morning message, festival shoutout, or light joke)
+
+### `post_zh.md`
+Fully Chinese post:
+- Recap question translated to Chinese (opener)
+- Story titles translated to Chinese
+- Summaries written in Chinese; English terms in parentheses on first use: `血凝块 (blood clot)`
+- "为什么重要" societal benefit per story
+- Original article link per story
+- Full vocabulary table (中文 | English | 说明)
+- Recap answer translated to Chinese
+- Chinese closing greeting
 
 ### `recap.json`
 ```json
@@ -53,6 +66,7 @@ The formatted post, ready for copy-paste:
   "topic": "The article title it's drawn from"
 }
 ```
+Stored in English. Both the EN and ZH posts use it — the ZH post translates it on generation.
 This file is automatically picked up by the next day's run as the post opener.
 
 ## Post format rules
