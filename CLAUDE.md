@@ -29,18 +29,19 @@ Skills live in `.claude/skills/`. Each skill is a folder with a `SKILL.md` file.
 
 **Pattern:** `.claude/skills/skill-name/SKILL.md`
 
-Skills are built organically as recurring workflows emerge. None exist yet — see the Skills Backlog below.
+Skills are built organically as recurring workflows emerge.
 
-### Skills Backlog
-Recurring tasks to turn into skills over time:
-1. Crawl Nature Reviews & Analysis (t-1)
-2. Crawl Nature Research Articles (t-1)
-3. Verify generated content against source (hallucination check)
-4. Generate bilingual post (EN + ZH) in Nature Teaser Daily format
-5. Format post for Twitter
-6. Format post for Xiaohongshu
-7. Format post for WeChat
-8. Apply pipeline to new content sources (books, other publishers)
+### Built
+- `crawl-nature-reviews` — crawl Nature Reviews & Analysis for a target date
+- `generate-bilingual-post` — generate bilingual EN+ZH post from crawled data
+
+### Backlog
+1. Crawl Nature Research Articles (t-1)
+2. Verify generated content against source (hallucination check)
+3. Format post for Twitter
+4. Format post for Xiaohongshu
+5. Format post for WeChat
+6. Apply pipeline to new content sources (books, other publishers)
 
 ## Decision Log
 
@@ -55,22 +56,9 @@ Claude Code maintains persistent memory across conversations. Patterns, preferen
 - To save something specific: just say "Remember that I always want X."
 - Memory + context files + decision log = assistant gets smarter over time without re-explaining things.
 
-## Templates
-
-Session closeouts: `templates/session-summary.md`
-
-## References
-
-SOPs and examples live in `references/`. Add files here as workflows solidify.
-
-## Archives
-
-Don't delete outdated material — move it to `archives/`.
-
 ## Keeping Context Current
 
 - **When focus shifts:** Update `context/current-priorities.md`
 - **Each quarter:** Update `context/goals.md`
 - **After decisions:** Append to `decisions/log.md`
-- **As workflows solidify:** Add SOPs to `references/sops/`
 - **When a pattern repeats:** Build a skill in `.claude/skills/`

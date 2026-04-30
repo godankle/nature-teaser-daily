@@ -27,7 +27,7 @@ HEADERS = {
         "Chrome/124.0.0.0 Safari/537.36"
     )
 }
-OUTPUT_DIR = Path(__file__).parents[3] / "projects" / "nature-teaser-daily" / "data"
+DATA_ROOT = Path(__file__).parents[3] / "projects" / "nature-teaser-daily" / "data"
 
 
 def fetch_soup(url: str) -> BeautifulSoup:
@@ -123,8 +123,9 @@ def main():
 
     articles = crawl(args.date, fetch_full=args.full)
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    out_file = OUTPUT_DIR / f"{args.date}-reviews.json"
+    out_dir = DATA_ROOT / args.date
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file = out_dir / "reviews.json"
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(articles, f, ensure_ascii=False, indent=2)
 

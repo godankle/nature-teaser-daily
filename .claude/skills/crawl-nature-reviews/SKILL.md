@@ -1,7 +1,7 @@
 # Skill: crawl-nature-reviews
 
 Crawls Nature Reviews & Analysis for articles published on a target date (default: yesterday).
-Outputs a JSON file to `projects/nature-teaser-daily/data/YYYY-MM-DD-reviews.json`.
+Outputs a JSON file to `projects/nature-teaser-daily/data/YYYY-MM-DD/reviews.json`.
 
 ## When to use
 - At the start of each daily pipeline run to gather raw article data
@@ -25,7 +25,7 @@ python .claude/skills/crawl-nature-reviews/crawl.py --full
 
 ## Output format
 
-`projects/nature-teaser-daily/data/YYYY-MM-DD-reviews.json`
+`projects/nature-teaser-daily/data/YYYY-MM-DD/reviews.json`
 
 ```json
 [
@@ -42,9 +42,8 @@ python .claude/skills/crawl-nature-reviews/crawl.py --full
 ```
 
 ## Next steps after crawling
-1. Review the JSON — pick 3–5 top stories
+1. Run the generate-bilingual-post skill — ask Claude Code to generate the post, or run generate.py directly
 2. Run the hallucination-check skill (not built yet)
-3. Run the generate-bilingual-post skill (not built yet)
 
 ## Notes
 - Articles are sorted newest-first on the listing page; the crawler stops once it passes the target date
